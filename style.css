@@ -10,15 +10,19 @@ body {
 .card {
     background-color: rgb(33, 84, 224);
     color: white;
-    height: 160px;
-    max-width: 260px;
+    height: 180px;
+    max-width: 280px;
     border-radius: 5px;
-    font: 1rem / 1.5 sans-serif;
+    font: 1.1rem / 1.5 sans-serif;
     margin-bottom: 20px;
     text-align: left;
     padding: 20px;
     text-align: center;
     font-weight: bold;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
 }
 
 .form-row {
@@ -28,4 +32,27 @@ body {
     width: 100%;
     padding: 0.5rem 0.75rem;
     border: rgb(22, 44, 241);
+}
+
+input[type="button"] {
+    border-radius: 3px;
+    min-width: 40px;
+    height: 22px;
+    align-self: center;
+}
+
+.textNode {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.buttonRemove {
+    margin-right: 5px;
+    justify-self: end;
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.buttonRead {
+    margin-left: 5px;
+    justify-self: start;
+    grid-area: 2 / 2 / 3 / 3;
 }

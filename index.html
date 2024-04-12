@@ -9,19 +9,20 @@
 </head>
 <body>
     <button id="new-book">NEW BOOK</button>
+    <div class="card-container"></div>
     <dialog id="dialog">
-        <form action="" method="get">
+        <form action="" method="post">
             <div class="form-row"><label for="title" class="form-label">Title</label><input type="text" id="title"></div>
             <div class="form-row"><label for="author" class="form-label">Author</label><input type="text" id="author"></div>
             <div class="form-row"><label for="pages" class="form-label">Number of Pages</label><input type="text" id="pages"></div>
             <div class="form-row">
                 <fieldset>
                     <legend>Have you finished this book?</legend>
-                    <div><label for="yes">Yes</label><input type="radio" id="yes" checked></div>
-                    <div><label for="no">No</label><input type="radio" id="no"></div>
+                    <div><label for="yes">Yes</label><input type="radio" id="yes" name="read" value="true"></div>
+                    <div><label for="no">No</label><input type="radio" id="no" name="read" value="false"></div>
                 </fieldset>
             </div>
-            <button id="close-form">Submit</button>
+            <input type="submit" id="close-form" value="Add Book" />
         </form>
     </dialog>
 </body>
